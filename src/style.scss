@@ -1,10 +1,25 @@
 // Configuration
 @import "bootstrap/scss/functions";
+$text: #050315;
+$background: #fbfbfe;
+$primary: #2f27ce;
+$secondary: #dedcff;
+$accent: #433bff;
+
+
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $accent,
+  "pluto": $red-600,
+);
 @import "bootstrap/scss/utilities";
+$utilities: map-remove($utilities, "float", "opacity", "overflow", "shadow", "position");
 
 // Layout & components
 @import "bootstrap/scss/root";
